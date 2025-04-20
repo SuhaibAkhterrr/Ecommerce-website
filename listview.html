@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Design</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+  <!-- HEADER -->
+<header class="header">
+    <div class="logo">
+        <img src="Brand Logo/logo-colored.svg" alt="Brand Logo"> 
+        
+    </div>
+    <div class="search-bar">
+        <input type="text" placeholder="Search">
+        <select>
+            <option>All category</option>
+            <option>Electronics</option>
+            <option>Fashion</option>
+            <option>Home & Kitchen</option>
+        </select>
+        <button>Search</button>
+    </div>
+    <div class="user-menu">
+        <div class="icon">
+          <a href="#">  <img src="Icons\Profile.png" alt="Profile"> </a>
+            <span>Profile</span>
+        </div>
+        <div class="icon">
+           <a href="#"> <img src="Icons\Messages.png" alt="Messages"> </a>
+            <span>Message</span>
+        </div>
+        <div class="icon">
+           <a href="#"> <img src="Icons\orders.png" alt="Orders"> </a>
+            <span>Orders</span>
+        </div>
+        <div class="icon">
+          <a href="#">  <img src="Icons\my cart.png" alt="Cart"> </a>
+            <span>My Cart</span>
+        </div>
+    </div>
+
+</header>
+
+<!-- START: Product Listing with Sidebar -->
+<div class="product-page">
+
+    <!-- Sidebar Filters -->
+    <aside class="sidebar">
+      <h3>Category</h3>
+      <ul>
+        <li>Mobile accessory</li>
+        <li>Electronics</li>
+        <li>Smartphones</li>
+        <li>Modern tech</li>
+        <li><a href="#">See all</a></li>
+      </ul>
+  
+      <h3>Brands</h3>
+      <ul>
+        <li><input type="checkbox"> Samsung</li>
+        <li><input type="checkbox"> Apple</li>
+        <li><input type="checkbox"> Huawei</li>
+        <li><input type="checkbox"> Poco</li>
+        <li><input type="checkbox"> Lenovo</li>
+        <li><a href="#">See all</a></li>
+      </ul>
+  
+      <h3>Features</h3>
+      <ul>
+        <li><input type="checkbox"> Metallic</li>
+        <li><input type="checkbox"> Plastic cover</li>
+        <li><input type="checkbox"> 8GB Ram</li>
+        <li><input type="checkbox"> Super power</li>
+        <li><input type="checkbox"> Large Memory</li>
+        <li><a href="#">See all</a></li>
+      </ul>
+  
+      <h3>Price range</h3>
+      <input type="range" min="0" max="9999" />
+      <div class="price-range">
+        <input type="number" placeholder="Min">
+        <input type="number" placeholder="Max">
+        <button>Apply</button>
+      </div>
+  
+      <h3>Condition</h3>
+      <ul>
+        <li><input type="radio" name="cond" checked> Any</li>
+        <li><input type="radio" name="cond"> Refurbished</li>
+        <li><input type="radio" name="cond"> Brand new</li>
+        <li><input type="radio" name="cond"> Old items</li>
+      </ul>
+  
+      <h3>Ratings</h3>
+      <ul>
+        <li>★★★★★</li>
+        <li>★★★★☆</li>
+        <li>★★★☆☆</li>
+        <li>★★☆☆☆</li>
+        <li>★☆☆☆☆</li>
+      </ul>
+    </aside>
+  
+    <!-- Main Product List -->
+    <main class="product-list">
+      <div class="list-header">
+        <span>12,911 items in <strong>Mobile accessory</strong></span>
+        <label><input type="checkbox"> Verified only</label>
+      </div>
+  
+      <!-- Product Card -->
+      <div class="product-card">
+        <img src="images/phone.jpg" alt="Phone">
+        <div class="product-info">
+          <h4>Canon Camera EOS 2000, Black 10x zoom</h4>
+          <div class="price-row">
+            <span class="price">$998.00</span>
+            <span class="old-price">$1128.00</span>
+            <span class="ship">Free Shipping</span>
+          </div>
+          <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+          <a href="#">View details</a>
+        </div>
+      </div>
+  
+      <!-- Copy above div for more products -->
+      <!-- Example: Repeat with other product images and text -->
+  
+      <!-- Pagination -->
+      <div class="pagination">
+        <label>Show 
+          <select>
+            <option>10</option>
+            <option>20</option>
+          </select>
+        </label>
+        <div class="page-numbers">
+          <a href="#">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">Next</a>
+        </div>
+      </div>
+    </main>
+  </div>
+  <!-- END: Product Listing with Sidebar -->
+  
+
+    <!--Navbar -->
+    <nav class="navbar">
+        <div class="left-menu">
+            <span class="menu-icon">☰</span> 
+            <a href="#">All category</a>
+            <a href="#">Hot offers</a>
+            <a href="#">Gift boxes</a>
+            <a href="#">Projects</a>
+            <a href="#">Menu item</a>
+            <a href="#">Help ⌄</a> 
+        </div>
+        <div class="right-menu">
+            <a href="#">English, USD ⌄</a>
+            <a href="#">Ship to <img src="Flags/1.png" alt="Germany Flag"></a>
+        </div>
+    </nav>
+
+    <!--Newsletter Subscription-->
+
+<section class="newsletter">
+    <h2>Subscribe on our newsletter</h2>
+    <p>Get daily news on upcoming offers from many suppliers all over the world</p>
+    <form action="#" method="POST">
+        <div class="input-container">
+            <span class="icon">📧</span>
+            <input type="email" placeholder="Email" required>
+            <button type="submit">Subscribe</button>
+        </div>
+    </form>
+</section>
+
+ <!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Brand Section -->
+        <div class="footer-brand">
+            <div class="logo">
+                <img src="Brand Logo/logo-symbol.jpg" alt="Brand Logo"> 
+                <span>Brand</span>
+            </div>
+            <p>Best information about the company goes here but now lorem ipsum is.</p>
+            <div class="social-icons">
+               <a href="https://www.facebook.com" target="_blank"><img src="Icons\Facebook.png" alt="Facebook"></a> 
+               <a href="https://www.twitter.com" target="_blank"><img src="Icons\twitter.png" alt="Twitter"></a>
+               <a href="https://www.linkedin.com" target="_blank"><img src="Icons\linkedin.png" alt="LinkedIN"></a>
+               <a href="https://www.youtube.com" target="_blank"><img src="Icons\youtube.png" alt="Youtube"></a>
+               <a href="https://www.instagram.com" target="_blank"><img src="Icons\instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
+
+
+        
+        
+
+        <!-- Footer Links -->
+        <div class="footer-links">
+            <div>
+                <h4>About</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Find Store</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Blogs</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Partnership</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Find Store</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Blogs</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Information</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Money Refund</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>For Users</h4>
+                <ul>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">My Orders</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- App Download Section -->
+        <div class="footer-app">
+            <h4>Get App</h4>
+            <a href="https://www.apple.com/app-store"><img src="Icons\App Store.png" alt="Download on the App Store"></a>
+            <a href="https://play.google.com/store/apps"><img src="Icons\google play.png" alt="Get it on Google Play"></a>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <p>© 2023 Ecommerce.</p>
+        <div class="language-selector">
+            <img src="Flags/United States.png" alt="USA Flag">
+            <span>English</span>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

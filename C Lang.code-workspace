@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../C Lang"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "E-Commerce Frontend Design"
+	}
+}

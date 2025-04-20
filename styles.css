@@ -1,0 +1,985 @@
+/* Reset and Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.header, .navbar {
+    padding: 10px 80px;  /* Adjust the '40px' value for more or less space */
+}
+/* LOGO */
+.logo img {
+    height: 40px;
+}
+
+/* SEARCH BAR */
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 500px;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.search-bar select {
+    padding: 10px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* USER MENU */
+.user-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    color: #333;
+}
+
+.icon img {
+    width: 20px;
+    height: 20px;
+}
+
+/* LOWER NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.header, .navbar {
+    padding: 10px 80px;  /* Adjust the '40px' value for more or less space */
+}
+
+/* LEFT MENU */
+.left-menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.menu-icon {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* RIGHT MENU */
+.right-menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* NAVBAR LINKS */
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #007bff;
+}
+
+/* FLAG ICON */
+.navbar a img {
+    width: 20px;
+    height: 15px;
+    margin-left: 5px;
+}
+
+/* Features Section Styles */
+.features {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.feature {
+    display: inline-block;
+    width: 22%;
+    margin: 0 1%;
+    text-align: center;
+}
+
+.feature i {
+    font-size: 40px;
+    color: #007bff;
+}
+
+/* Footer Styles */
+
+
+.search-bar input {
+    padding: 10px;
+    border: none;
+    outline: none;
+    width: 500px;
+}
+
+.search-bar select {
+    padding: 10px;
+    border: 1px solid #007bff;
+    background: #f0f0f0;
+
+}
+
+.search-bar button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 12px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.user-menu {
+    display: flex;
+    align-items:last baseline ;
+    gap: 30px;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    color: #666;
+}
+
+.icon img {
+    width: 20px;
+    margin-bottom: 4px;
+}
+
+/* Extra Services Section */
+.extra-services {
+    text-align: center;
+    padding: 20px;
+    background: #f5f7f9;
+}
+
+.extra-services h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.service-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.service-card p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.service-card .icon {
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
+    background: #e0ecff;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 16px;
+}
+
+/* Suppliers Section */
+.suppliers {
+    text-align: center;
+    padding: 20px;
+}
+
+.suppliers h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.region-container {
+    display:flex ;
+    flex-wrap: wrap ; /* Allows items to wrap into a second row */
+    justify-content: center;
+    gap: 10px;
+    max-width: 900px; /* Adjust as needed for two rows */
+    margin: auto ;
+    
+}
+
+.region {
+    display: block;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    padding: 10px;
+   
+    flex: 1 5 calc(25% - 100px); /* Makes 4 items per row */
+    min-width: 150px; /* Prevents items from shrinking too much */
+    text-align: left;
+    
+}
+
+.region img {
+    width: 35px;
+    height: auto;
+    align-items: center;
+}
+
+.region span {
+    display: block;
+    color: gray;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+/* Newletter Subscription */
+
+.newsletter {
+    background: #cccecf8f; /* Light background */
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    
+    margin: 20px auto;
+}
+
+.newsletter h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.newsletter p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: white;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+    margin: auto;
+}
+
+.input-container .icon {
+    padding: 8px;
+    background: #eee;
+    border-radius: 5px 0 0 5px;
+}
+
+.input-container input {
+    border: none;
+    padding: 10px;
+    width: 300px;
+    outline: none;
+}
+
+.input-container button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.input-container button:hover {
+    background: #0056b3;
+}
+
+
+/* Footer Styling */
+.footer {
+    background-color: #f8f9fa;
+    padding: 30px 50px;
+    color: #333;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Brand Section */
+
+* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f9fc; /* Light background for clean look */
+  }
+  
+  /* Main container for sidebar, banner, and right sidebar */
+  .container {
+    display: flex;
+    padding: 20px;
+    gap: 20px; /* Space between sections */
+  }
+  
+  /* ----------------------
+     LEFT SIDEBAR (Categories)
+  ------------------------- */
+  .sidebar {
+    width: 180px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 15px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  /* Highlight active category */
+  .sidebar li.active {
+    background-color: #e8f0ff;
+    border-radius: 6px;
+    font-weight: bold;
+  }
+  
+  /* ----------------------
+     MAIN BANNER SECTION
+  ------------------------- */
+  .main-banner {
+    flex-grow: 1;
+    background: linear-gradient(45deg, #c1f0e0, #e0fffb); /* Fallback background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 30px;
+    background-image: url('https://via.placeholder.com/400x200'); /* Placeholder image */
+    background-size: cover;
+    background-position: center;
+    color: #111;
+  }
+  
+  /* Banner text block */
+  .banner-text {
+    background: rgba(255, 255, 255, 0.8); /* Transparent white overlay for readability */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+  }
+  
+  .banner-text h1 {
+    font-size: 28px;
+  }
+  
+  .banner-text button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    border: none;
+    background: #1a73e8; /* Google Blue */
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* ----------------------
+     RIGHT SIDEBAR (User actions and promo)
+  ------------------------- */
+  .right-sidebar {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* User box (login/join) */
+  .user-box {
+    background: #e6f3fb;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  /* Buttons */
+  .btn-blue {
+    background: #1a73e8;
+    color: #fff;
+    padding: 6px 12px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  .btn-white {
+    background: #fff;
+    color: #1a73e8;
+    padding: 6px 12px;
+    border: 1px solid #1a73e8;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  /* Promotional boxes */
+  .promo {
+    padding: 15px;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .orange {
+    background: #ff7f50; /* Coral color */
+  }
+  
+  .teal {
+    background: #20b2aa; /* Light Sea Green */
+  }
+  
+  /* ----------------------
+     DEALS AND OFFERS SECTION
+  ------------------------- */
+  .deals-section {
+    display: flex;
+    padding: 20px;
+    background: #fff;
+    margin: 20px;
+    border-radius: 8px;
+    gap: 20px;
+  }
+  
+  /* Deals header (left column) */
+  .deals-header {
+    min-width: 220px;
+  }
+  
+  .deals-header h3 {
+    margin: 0;
+  }
+  
+  /* Countdown timer styles */
+  .countdown {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .countdown div {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+  }
+  
+  /* Product cards (right section) */
+
+  .products {
+    display: flex;
+    gap: 0; /* Remove space between items */
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  /* Style each product as part of a seamless strip */
+  .product {
+    flex: 1;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .product img {
+    width: 100%;           /* Full width */
+    height: 200px;         /* Fixed height for consistency */
+    object-fit: cover;     /* Maintain aspect ratio and crop if needed */
+    display: block;
+    border-radius: 0;      /* No rounded corners to keep it seamless */
+  }
+  
+  /* Overlaying text and discount label */
+  .product p,
+  .product span {
+    position: absolute;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+  }
+  
+  .product p {
+    bottom: 40px;
+    left: 10px;
+    font-size: 16px;
+  }
+  
+  .product span {
+    bottom: 10px;
+    left: 10px;
+    font-size: 14px;
+    background: red;
+    padding: 3px 6px;
+    border-radius: 4px;
+  }
+  
+  .products {
+  }
+  
+.footer-brand {
+    flex: 1;
+    max-width: 250px;
+}
+
+.footer-brand .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.footer-brand .logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.footer-brand p {
+    font-size: 14px;
+    margin: 10px 0;
+    color: #666;
+}
+
+.social-icons img {
+    width: 24px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.main-banner {
+    flex-grow: 1;
+  
+    /* 🔽 Background Image */
+    background-image: url('https://images.pexels.com/photos/682933/pexels-photo-682933.jpeg?auto=compress&cs=tinysrgb&w=600/600x600'); /* Replace with your actual image path */
+    background-size: cover;         /* Makes image cover the area */
+    background-position: center;    /* Keeps the image centered */
+    background-repeat: no-repeat;   /* Prevents tiling */
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 30px;
+    color: #111;
+  }
+
+  /* Reset and body styling */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f2f5;
+  }
+  
+  /* Each section wrapper */
+  .category-section {
+    display: flex;
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    overflow: hidden;
+  }
+  
+  /* Left column styling */
+  .category-left {
+    width: 25%;
+    padding: 20px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 1px solid #eee;
+  }
+  
+  .category-left h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .category-left button {
+    padding: 10px 15px;
+    background-color: #008ecc;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .category-left button:hover {
+    background-color: #006da4;
+  }
+  
+  /* Right grid with 4 columns */
+  .category-grid {
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+    gap: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Individual item styling */
+  .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fafafa;
+    padding: 15px;
+    border-radius: 10px;
+    height: 120px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    transition: transform 0.2s ease;
+  }
+  
+  .item:hover {
+    transform: translateY(-2px);
+  }
+  
+  /* Text content on the left */
+  .item .text {
+    max-width: 60%;
+  }
+  
+  .item .text p {
+    margin: 0;
+    font-weight: 600;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .item .text span {
+    font-size: 13px;
+    color: #777;
+    margin-top: 5px;
+    display: block;
+  }
+  
+  /* Product image on the right */
+  .item img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+  }
+  
+/* Main container for the entire section */
+.quote-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 40px;
+    background: linear-gradient(to right, #3b82f6, #60a5fa); /* Blue gradient */
+    color: white;
+  }
+  
+  /* Left side text block */
+  .quote-text {
+    max-width: 45%;
+  }
+  
+  .quote-text h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .quote-text p {
+    font-size: 16px;
+    color: #e0f2fe; /* Lighter blue for text */
+  }
+  
+  /* Right side form box */
+  .quote-form {
+    background: white;
+    color: #111827;
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form title */
+  .quote-form h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  
+  /* Input fields and textarea */
+  .quote-form input,
+  .quote-form textarea,
+  .quote-form select {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  
+  /* Flex container for quantity + unit dropdown */
+  .form-row {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .form-row input {
+    flex: 2;
+  }
+  
+  .form-row select {
+    flex: 1;
+  }
+  
+  /* Submit button style */
+  .quote-form button {
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .quote-form button:hover {
+    background-color: #1e40af;
+  }
+  
+  /* Responsive styling for smaller screens */
+  @media (max-width: 768px) {
+    .quote-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .quote-text,
+    .quote-form {
+      max-width: 100%;
+    }
+  
+    .quote-form {
+      width: 100%;
+      margin-top: 30px;
+    }
+  }
+
+  /* Entire section container */
+.recommended-section {
+    padding: 50px 20px;
+    background-color: #f4f8fb;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Section title */
+  .recommended-section h2 {
+    font-size: 24px;
+    color: #111;
+    margin-bottom: 30px;
+  }
+  
+  /* Product grid - 5 columns */
+  .items-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Show 5 in a row */
+    gap: 20px;
+  }
+  
+  /* Product card */
+  .item-card {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    transition: 0.3s ease;
+  }
+  
+  .item-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Product image */
+  .item-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  /* Price */
+  .price {
+    font-weight: bold;
+    color: #1f2937;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  /* Title */
+  .title {
+    font-size: 14px;
+    color: #555;
+  }
+  
+
+/* Footer Links */
+.footer-links {
+    display: flex;
+    gap: 40px;
+}
+
+.footer-links div h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 6px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+}
+
+.footer-links ul li a:hover {
+    color: #007bff;
+}
+
+/* App Download Section */
+.footer-app {
+    text-align: center;
+}
+
+.footer-app h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.footer-app img {
+    width: 120px;
+    display: block;
+    margin: 5px 0;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+    padding-top: 15px;
+    font-size: 14px;
+    color: #666;
+}
+
+.language-selector {
+    display: flex;
+    align-items: center;
+}
+
+.language-selector img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+
+  
+  
